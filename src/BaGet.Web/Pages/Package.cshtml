@@ -316,6 +316,11 @@ else
                     name: "Package Manager",
                     prefix: "PM>",
                     content: ["Install-Package @Model.Package.Id -Version @Model.Package.NormalizedVersionString"]
+                },
+                {
+                    name: "dotnet script",
+                    prefix: "#r",
+                    content: ["\"nuget: @Model.Package.Id, @Model.Package.NormalizedVersionString\""]
                 }
                 </text>
             }
